@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phillip Thomas — Portfolio</title>
+<meta name="description" content="Portfolio of Phillip Thomas, AI Research Engineer: real-time 3D engines, image-to-3D reconstruction, world-model post-training, digital-twin data pipelines, and independent creative systems including Paravoxia and a guided novel-synthesis pipeline.">
+<style>
+  :root{
+    --bg:#0c0d0e; --panel:#141619; --line:#26292e; --ink:#ece7dd; --dim:#a49e92;
+    --accent:#e8a33d; --accent2:#57c7d9; --radius:14px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent2);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:1020px;margin:0 auto;padding:56px 22px 80px}
+  header{display:flex;gap:26px;align-items:center;flex-wrap:wrap}
+  header img{width:118px;height:118px;border-radius:50%;object-fit:cover;border:2px solid var(--line)}
+  h1{font-size:2.35rem;margin:0 0 4px;letter-spacing:-.01em}
+  .role{color:var(--accent);font-weight:600;margin:0 0 8px}
+  .lede{color:var(--dim);max-width:640px;margin:0}
+  .links{margin-top:14px;display:flex;gap:16px;flex-wrap:wrap;font-size:.95rem}
+  h2{font-size:1.25rem;margin:52px 0 6px;letter-spacing:.01em}
+  .sub{color:var(--dim);margin:0 0 20px;font-size:.97rem}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:20px 20px 16px}
+  .card h3{margin:0 0 2px;font-size:1.08rem}
+  .where{color:var(--accent);font-size:.83rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin:0 0 10px}
+  .card p{color:#cfc9bc;margin:0 0 12px;font-size:.95rem}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+  .tag{font-size:.74rem;color:var(--dim);border:1px solid var(--line);border-radius:999px;padding:2px 9px}
+  .card .out{font-size:.9rem;display:flex;gap:14px;flex-wrap:wrap}
+  footer{margin-top:64px;border-top:1px solid var(--line);padding-top:20px;color:var(--dim);font-size:.92rem;
+    display:flex;gap:18px;flex-wrap:wrap;justify-content:space-between}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <img src="headshot.png" alt="Portrait of Phillip Thomas">
+    <div>
+      <h1>Phillip Thomas</h1>
+      <p class="role">AI Research Engineer — Meta Superintelligence Labs</p>
+      <p class="lede">I build prototypes that make world models tangible: real-time 3D engines driven by
+      segmentation models, image-to-3D reconstruction, agentic post-training for visual coding and 3D world
+      generation, and playable worlds of my own. My loop is concept &rarr; working prototype &rarr; a demo
+      that tells the story.</p>
+      <div class="links">
+        <a href="https://github.com/Phillip-Thomas">GitHub</a>
+        <a href="https://www.linkedin.com/in/fullstackphil">LinkedIn</a>
+        <a href="mailto:prthomas0321@gmail.com">prthomas0321@gmail.com</a>
+        <span style="color:var(--dim)">Atlanta, GA</span>
+      </div>
+    </div>
+  </header>
+
+  <h2>Research prototypes — Meta</h2>
+  <p class="sub">Post-training and prototyping for multimodal models: world models, reconstruction, and visual coding.</p>
+  <div class="grid">
+
+    <div class="card">
+      <h3>SAM 3 — Real-Time 3D Effects Engine</h3>
+      <p class="where">Meta Superintelligence Labs</p>
+      <p>A browser-native, real-time 3D engine where SAM&nbsp;3 segmentation masks drive live visual effects.
+      Built to turn a research capability into something you can see, touch, and play with in the browser —
+      no install, running on WebGL2.</p>
+      <div class="tags"><span class="tag">SAM 3</span><span class="tag">WebGL2</span><span class="tag">Real-time rendering</span><span class="tag">Interactive demo</span></div>
+    </div>
+
+    <div class="card">
+      <h3>SAM 3D — Image-to-3D Reconstruction Demo</h3>
+      <p class="where">Meta Superintelligence Labs</p>
+      <p>A working demonstration of SAM&nbsp;3D: a single image reconstructed into a manipulable 3D asset
+      (Gaussian splats). The demo makes image-to-3D research immediately legible — upload a photo, get a
+      3D object you can orbit and inspect.</p>
+      <div class="tags"><span class="tag">SAM 3D</span><span class="tag">Gaussian splats</span><span class="tag">Reconstruction</span><span class="tag">Prototyping</span></div>
+    </div>
+
+    <div class="card">
+      <h3>Visual Coding &amp; 3D World Generation — Post-Training</h3>
+      <p class="where">Meta Superintelligence Labs</p>
+      <p>The agentic harness behind SFT for 3D world generation: VM-based RL environments for graphics
+      tasks and the data-synthesis pipelines that feed training — plus rubric-tuned LLM+VLM judges and an
+      ELO arena that decide which generated worlds are actually good.</p>
+      <div class="tags"><span class="tag">SFT &amp; RL</span><span class="tag">Agentic harnesses</span><span class="tag">LLM+VLM judges</span><span class="tag">World generation</span></div>
+    </div>
+
+    <div class="card">
+      <h3>SAM Worlds — Digital-Twin Data Pipeline</h3>
+      <p class="where">Meta Superintelligence Labs</p>
+      <p>An end-to-end pipeline that turns real spaces into digital twins for model training: a distributed
+      DAG on Meta&rsquo;s Spark framework, VLM scene understanding, multi-million-row data-quality
+      infrastructure, and agentic data-repair loops, with ablations showing measurable model gains.</p>
+      <div class="tags"><span class="tag">Digital twins</span><span class="tag">Distributed DAG</span><span class="tag">VLM scene understanding</span><span class="tag">Data quality</span></div>
+    </div>
+
+    <div class="card">
+      <h3>Locate 3D — Cortex Visualizer</h3>
+      <p class="where">Meta FAIR</p>
+      <p>The interactive point-cloud visualizer (React + Three.js / R3F) for Locate&nbsp;3D, a model that
+      localizes objects in 3D scenes from natural-language referring expressions. I&rsquo;m a co-author on
+      the ICML&nbsp;2025 paper.</p>
+      <div class="tags"><span class="tag">Three.js / R3F</span><span class="tag">Point clouds</span><span class="tag">3D grounding</span><span class="tag">ICML 2025</span></div>
+      <div class="out"><a href="https://arxiv.org/abs/2504.14151">Paper (arXiv)</a></div>
+    </div>
+
+    <div class="card">
+      <h3>World Models &amp; Embodied AI</h3>
+      <p class="where">Meta FAIR · 2024–2025</p>
+      <p>Research engineering for world models and embodied AI: model development with checkpoint
+      regression tracking and synthetic-data generation — the measurement discipline that keeps
+      long-running world-model experiments honest.</p>
+      <div class="tags"><span class="tag">World models</span><span class="tag">Embodied AI</span><span class="tag">Synthetic data</span><span class="tag">Evaluation</span></div>
+    </div>
+
+  </div>
+
+  <h2>Independent work</h2>
+  <p class="sub">Original systems I design, build, and ship end-to-end outside of work.</p>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Paravoxia</h3>
+      <p class="where">Independent · Playable now</p>
+      <p>A story-driven voxel exploration and survival game in Three.js: co-op multiplayer, a fully
+      procedural Web Audio soundtrack engine, and a versioned &ldquo;Living Story Bible&rdquo; with drift
+      detection that keeps a 15-chapter authored story consistent as the world evolves. Concept, engine,
+      and story system are all original.</p>
+      <div class="tags"><span class="tag">Three.js</span><span class="tag">React 19</span><span class="tag">Multiplayer</span><span class="tag">Procedural audio</span><span class="tag">World-building</span></div>
+      <div class="out">
+        <a href="https://paravox-game.web.app">Play it live</a>
+        <a href="https://github.com/Phillip-Thomas/vox">Code</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Novel Synthesis Pipeline</h3>
+      <p class="where">Independent · Creative tooling</p>
+      <p>A guided, agentic pipeline for synthesizing long-form fiction: twelve phases from thesis to
+      release, with evidence checks, LLM-judgment gates, and agentic repair loops. Its provenance-first
+      visual interface makes every stage, prompt, and decision inspectable — built to explore how far
+      agentic systems can carry a creative work without losing the author&rsquo;s intent.</p>
+      <div class="tags"><span class="tag">Agentic pipelines</span><span class="tag">LLM judges</span><span class="tag">Creative tools</span><span class="tag">Storytelling</span></div>
+    </div>
+
+  </div>
+
+  <footer>
+    <span>Phillip Thomas — Atlanta, GA</span>
+    <span><a href="https://github.com/Phillip-Thomas">GitHub</a> · <a href="https://www.linkedin.com/in/fullstackphil">LinkedIn</a> · <a href="mailto:prthomas0321@gmail.com">Email</a></span>
+  </footer>
+
+</div>
+</body>
+</html>
